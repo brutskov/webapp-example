@@ -20,6 +20,9 @@ public class Event extends BaseEntity {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "owner_id")
     private User owner;
+
+    //@JsonSerialize(using = LocalDateTimeSerializer.class)
+    //@JsonDeserialize(using = LocalDateTimeDeserializer.class)
     private LocalDateTime date;
 
     public enum Type {

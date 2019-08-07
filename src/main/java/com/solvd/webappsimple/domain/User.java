@@ -14,6 +14,9 @@ public class User extends BaseEntity {
     private String firstName;
     private String lastName;
     private String sessionId;
+
+    //@JsonSerialize(using = LocalDateTimeSerializer.class)
+    //@JsonDeserialize(using = LocalDateTimeDeserializer.class)
     private LocalDateTime sessionExpiredIn;
 
     public User() {

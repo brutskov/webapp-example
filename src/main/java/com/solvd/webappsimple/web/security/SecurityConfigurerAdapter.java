@@ -14,11 +14,13 @@ import org.springframework.security.web.access.channel.ChannelProcessingFilter;
 public class SecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
 
     private static final String[] PUBLIC_API_PATTERNS = new String[] {
+            "/auth/**"
 
     };
 
     private static final String[] AUTHENTICATED_API_PATTERNS = new String[] {
-
+            "/users/**",
+            "/events/**"
     };
 
     private final UserPassAuthService userPassAuthService;

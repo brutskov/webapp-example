@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 public class EventSearchCriteria {
 
+    //@JsonSerialize(using = LocalDateTimeSerializer.class)
+    //@JsonDeserialize(using = LocalDateTimeDeserializer.class)
     private LocalDateTime beforeDate;
 
     public LocalDateTime getBeforeDate() {

@@ -1,6 +1,5 @@
 package com.solvd.webappsimple.service;
 
-
 import com.solvd.webappsimple.domain.Event;
 
 import java.time.LocalDateTime;

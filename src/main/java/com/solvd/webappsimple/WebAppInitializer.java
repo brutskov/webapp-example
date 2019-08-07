@@ -26,11 +26,10 @@ public class WebAppInitializer implements WebApplicationInitializer {
         // Register and map the dispatcher servlet
         ServletRegistration.Dynamic dispatcher = container.addServlet("dispatcher", new DispatcherServlet(dispatcherContext));
         dispatcher.setLoadOnStartup(1);
-
         dispatcher.addMapping("/");
+
         container.addFilter("springSecurityFilterChain", new DelegatingFilterProxy())
                  .addMappingForUrlPatterns(null, true, "/*");
-
     }
 
 }
