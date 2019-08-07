@@ -1,6 +1,6 @@
 package com.solvd.webappsimple.web.util;
 
-import com.solvd.webappsimple.web.BaseController;
+import com.solvd.webappsimple.web.controller.BaseController;
 
 import java.lang.reflect.Method;
 import java.util.regex.Matcher;

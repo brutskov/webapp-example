@@ -52,9 +52,9 @@ public class DispatcherServlet extends HttpServlet {
             Object controllersAttribute = getServletContext().getAttribute("controllers");
             List<HttpMethodElement> httpMethodElements = new ArrayList<>((Collection<HttpMethodElement>) controllersAttribute);
             HttpMethodElement httpMethodElement = httpMethodElements.stream()
-                                                                    .filter(hme -> getRequestRelativePath(req).equals(hme.getPath()) && req.getMethod().equals(hme.getHttpMethod().name()))
-                                                                    .findFirst()
-                                                                    .orElse(null);
+                                                   .filter(hme -> getRequestRelativePath(req).equals(hme.getPath()) && req.getMethod().equals(hme.getHttpMethod().name()))
+                                                   .findFirst()
+                                                   .orElse(null);
             if (httpMethodElement == null) {
                 httpMethodElement = httpMethodElements.stream()
                                                       .filter(hme -> match(req, hme) && req.getMethod().equals(hme.getHttpMethod().name()))

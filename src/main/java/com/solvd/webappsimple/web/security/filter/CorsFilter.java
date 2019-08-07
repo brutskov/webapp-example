@@ -1,4 +1,4 @@
-package com.solvd.webappsimple.web.security;
+package com.solvd.webappsimple.web.security.filter;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

@@ -1,4 +1,4 @@
-package com.solvd.webappsimple.domain.config.formatter;
+package com.solvd.webappsimple.web.util.formatter;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;

@@ -2,8 +2,8 @@ package com.solvd.webappsimple.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.solvd.webappsimple.domain.config.formatter.LocalDateTimeDeserializer;
-import com.solvd.webappsimple.domain.config.formatter.LocalDateTimeSerializer;
+import com.solvd.webappsimple.web.util.formatter.LocalDateTimeDeserializer;
+import com.solvd.webappsimple.web.util.formatter.LocalDateTimeSerializer;
 
 import java.time.LocalDateTime;
 
