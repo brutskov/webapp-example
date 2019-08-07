@@ -1,6 +1,6 @@
 package com.solvd.webappsimple;
 
-import com.solvd.webappsimple.web.security.filter.DelegatingFilter;
+import com.solvd.webappsimple.web.security.DelegatingFilter;
 import com.solvd.webappsimple.web.servlet.DispatcherServlet;
 
 import javax.servlet.ServletContext;

@@ -1,6 +1,6 @@
 package com.solvd.webappsimple;
 
-import com.solvd.webappsimple.web.security.filter.InternalFilter;
+import com.solvd.webappsimple.web.security.InternalFilter;
 
 import javax.servlet.ServletContainerInitializer;
 import javax.servlet.ServletContext;
